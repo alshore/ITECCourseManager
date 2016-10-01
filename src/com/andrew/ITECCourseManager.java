@@ -1,5 +1,7 @@
 package com.andrew;
 
+import java.util.ArrayList;
+
 public class ITECCourseManager {
 
     public static void main(String[] args) {
@@ -29,6 +31,16 @@ public class ITECCourseManager {
         ITECCourse infoTechConcepts = new ITECCourse("Info Tech Concepts", 1100, 30, "T.3050");
         infoTechConcepts.addStudents("Max");
         infoTechConcepts.addStudents("Nancy");
-        infoTechConcepts.addStudents("Orson");;
+        infoTechConcepts.addStudents("Orson");
+
+        ArrayList<ITECCourse> classList = new ArrayList<>();
+        classList.add(maintenance);
+        classList.add(java);
+        classList.add(infoTechConcepts);
+
+        for (int i = 0; i < classList.size(); i++) {
+            System.out.println(classList.get(i).getName() + " has " +
+                    classList.get(i).getRemainingSeats() + " seats remaining.");
+        }
     }
 }

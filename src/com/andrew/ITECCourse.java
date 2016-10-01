@@ -61,6 +61,8 @@ public class ITECCourse {
         if (students != null) {
             students.remove(studentName);
         }
-
+    }
+    public int getRemainingSeats() {
+        return this.maxStudents - this.students.size();
     }
 }
