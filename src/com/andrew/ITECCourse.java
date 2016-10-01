@@ -30,12 +30,12 @@ public class ITECCourse {
         this.room = newRoom;
     }
 
-    ITECCourse(String courseName, int courseCode, int courseMaxStudents) {
+    ITECCourse(String courseName, int courseCode, int courseMaxStudents, String courseRoom) {
 
         this.name = courseName;
         this.code = courseCode;
         this.maxStudents = courseMaxStudents;
-
+        this.room = courseRoom;
         this.students = new ArrayList<>();
     }
     public void addStudents(String studentName) {
